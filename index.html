@@ -1,34 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>EnvitePro</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-        <div>
-            <img class="logo" src="./image/Group 2720.svg" alt="logo">
+      <div class="head">
+        <img class="logo" src="./image/Group 2720.svg" alt="logo" />
+        <!-- list items -->
+        <ul class="navholder">
+          <li>
+            <a class="vec" href="#"
+              >FEATURES <img src="./image/Group 2591.svg" alt=""
+            /></a>
+          </li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">FAQS</a></li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <a class="but1" href="#"><button>LOG IN</button></a>
+        <a class="but2" href="#"><button>GET STARTED</button></a>
+      </div>
+    </header>
+    <!-- First Section -->
+
+    <section>
+      <h1 class="big-heading">
+        The easiest way to monetize <br />your skills
+      </h1>
+      <h2 class="med-heading">
+        Envite is an all-in-one platform for anyone <br />looking to start
+        making extra cash hassle-free
+      </h2>
+
+      <a href="#" class="btnjoin">JOIN NOW – IT’S FREE!</a>
+
+      <h3 class="nocredit">No credit card required</h3>
+    </section>
+<!-- Slider -->
+    <div class="slider">
+      <div class="slides">
+        <!-- radio btns -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+        <!-- images -->
+        <div class="slide first">
+          <img src="./image/Envite-Features.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./image/Envite-Features.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./image/Envite-Features.jpg" alt="">
+        </div>
+        <!-- automatic navigation -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+      </div>
+    
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <script>
+      var counter = 1 
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+
+<!-- second section -->
+
+    <section>
+      <h4>
+        Define what you’re good at, personalize your space, <br>and you’re ready to go.
+      </h4>
+      <h5 class="smalltitle">
+        3 minutes and you’re in business
+      </h5>
+    </section>
+
+    <!-- shadowboxes -->
+    <div class="box">
+      <div class="shadow box1"> <img src="./image/Vector.png" alt="1"> <p> <span style="color:black">Sign up</span>  to create your free <br>Envite account </p>
+      </div>
+      <div class="shadow box2"> <img src="./image/Vector2.png" alt="2"> <p> <span style="color:black;">Customize your space</span>  by <br>adding services, prices,
+        <br>and availability </p>
+        </div>
+      <div class="shadow box3"> <img src="./image/Vector3.png" alt="3"> <p> <span style="color:black;">Share your self-site</span> 
+        <br>with your audience, receive <br>inquiries and start selling <br>your services </p>
+      </div>
+    </div>
+    <Section class="thirdbtn">
+      <a href="#">
+        <button class="thirdbtn1">GET STARTED</button>
+      </a>
+    </Section>
+
+<!-- icon section -->
+
+    <section class="iconsec">
+      <h4>Earn money at the click of a button with
+        <br>our online tools</h4>
+
+<!-- icon first section -->
+
+        <div class="iconinfo">
+          <div class="calendarinfo">
+            <img src="./image/Group 19055.png" alt="">
+            <h5>Flexible appointment <br>scheduling calendar</h5>
+            <h6>Set up your schedule to share <br>your availability with potential <br>clients and look professional.</h6>
+            <a href="#"><button class="iconbtn">Find out more > </button></a>
+          </div>
+
+          <div class="personalinfo">
+            <img src="./image/Group 19056.png" alt="">
+            <h5>Branded personal self-site</h5>
+            <h6>Stand out and show your unique <br>skills with your own site, share <br>your URL on your social networks <br>for more exposure.</h6>
+            <a href="#"><button class="iconbtn">Find out more > </button></a>
+          </div>
+
+          <div class="videoinfo">
+            <img src="./image/Group 19057.png" alt="">
+            <h5>Free video conferencing tools</h5>
+            <h6>With our online scheduling tool, you’ll <br>be able to set up free video <br>conferencing to start providing <br>services with ease.</h6>
+            <a href="#"><button class="iconbtn">Find out more > </button></a>
+          </div>
         </div>
 
-    <nav>
-        <ul class="navholder">
-            <a class="vec" href="#"><li>FEATURES </li><img src="./image/Group 2591.svg" alt=""></a> 
-            <a href="#"><li>PRICING</li></a>
-            <a href="#"><li>BLOG</li></a>
-            <a href="#"><li>ABOUT US</li></a>
-            <a href="#"><li>FAQS</li></a>
-        </ul>
-    </nav>
-        <div class="buttons">
-            <a class="but1" href="#"><button>LOG IN</button></a>
-            <a class="but2" href="#"><button>GET STARTED</button></a>
+<!-- icon second section -->
+
+
+        <div class="iconinfo">
+          <div class="clientinfo">
+          <img src="./image/Group 19054.png" alt="">
+            <h5>Client management</h5>
+            <h6>Client info, notes, progress, <br>everything is saved and <br>organized in one place, forever.</h6>
+            <a href="#"><button class="iconbtn">Find out more > </button></a>
+          </div>
+
+          <div class="paymentinfo">
+            <img src="./image/Group 19053.png" alt="">
+            <h5>Billing & payments</h5>
+            <h6>With our simple  free invoice <br>software, you’ll be able to keep <br>track of your earnings, accept <br>payments via credit cards easily <br>and more.
+            </h6>
+            <a href="#"><button class="iconbtn">Find out more > </button></a>
+          </div>
+
+          <div class="widgetinfo">
+            <img src="./image/Group 19052.png" alt="">
+            <h5>Widget to your site</h5>
+            <h6>Add the Envite to your site for clients <br>to enjoy scheduling, sending <br>reminders, and even video calls in <br>one click.
+            </h6>
+            <a href="#"><button class="iconbtn">Find out more > </button></a>
+          </div>
         </div>
-    </header>
-</body>
+<!-- icon third section -->
+        <div class="iconinfo">
+          <div class="adviceinfo">
+            <img src="./image/Group 19049.png" alt="">
+            <h5>Real-time peer-based advice engine</h5>
+            <h6>Based on our data and AI, we’ll <br>provide information about other <br>service providers in your area, <br>their pricing, popular services and <br>more.
+            </h6>
+          </div>
+
+          <div class="compaignsinfo">
+            <img src="./image/Group 19050.png" alt="">
+            <h5>Campaigns</h5>
+            <h6>Email templates, targeting <br>techniques, and everything else you <br>need to get off the ground.
+            </h6>
+            <a href="#"><button class="iconbtn">Find out more > </button></a>
+          </div>
+
+          <div>
+            <div class="groupsinfo">
+              <img src="./image/Group 19051.png" alt="">
+              <h5>Groups</h5>
+              <h6>Host private group sessions on <br>specific dates and times.
+              </h6>
+          </div>
+        </div>
+    </section>
+
+    <!-- middle image -->
+  <div class="midinfoimage">
+    <div>
+      <img class="midimage" src="./image/image 15.png" alt="">
+    </div>
+      <div>
+        <h4>Who is Envite for?</h4>
+        <h6>Envite is changing the game for any individual looking to monetize <br>skills, whether you are a freelancer, small business owner, <br>medium-size business, started a side gig, or just want to use your <br>skills and make extra cash, Envite is for you.</h6>
+        <a href="#"><button class="midimagebtn">Find out more > </button></a>
+    </div>
+  </div>
+
+  <div class="circleimageinfo">
+    <div >
+      <h4>Benefits of Envite</h4>
+      <h5>
+        <p>> An all-in-one web platform designed for any <br>individual looking to make extra cash and
+          <br>become a service seller</p>
+          <p>> Seamless one-click registration</p>
+          <p>> Save up to 20% on marketplace commissions</p>
+          <p>> Work like a pro and keep your clients close</p>
+      </h5>
+    </div>
+    <div>
+      <img class="circles" src="./image/Group 18845.png" alt="">
+    </div>
+  </div>
+
+<!-- second slider -->
+
+  <div class="secondsliderhead">
+      <h4>Trusted by hundreds of individuals
+        <br>across the globe</h4>
+        </div>
+
+    <!-- <div class="secondslider">
+      <div class="secondslides">
+        <input type="radio1" name="radio-btn" id="radio1">
+        <input type="radio1" name="radio-btn" id="radio2">
+        <input type="radio1" name="radio-btn" id="radio3"> -->
+
+
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <div class="carousel">
+              <img src="./image/“.svg" alt="">
+            <p>Before using Envite I had to manage my <br>business through four  different <br>applications, which meant a lot of <br>manual work and time wasted. Now <br>I’m doing it all from one place.
+             <br><span>I love it.</span></p>
+             <div class="imgslider">
+              <img src="./image/Oval.png" alt="">
+             <h5>Danny,
+             <br>Guitar instructor</h5>
+            </div>
+          </div>
+
+        <div class="carousel">
+          <img src="./image/“.svg" alt="">
+            <p>Before using Envite I had to manage my <br>business through four  different <br>applications, which meant a lot of <br>manual work and time wasted. Now <br>I’m doing it all from one place.
+             <br><span>I love it.</span></p>
+             <h5>Jude,
+             <br>Graphic Designer & Artist</h5>
+          </div>
+          <div class="carousel">
+            <img src="./image/“.svg" alt="">
+            <p>Before using Envite I had to manage my <br>business through four  different <br>applications, which meant a lot of <br>manual work and time wasted. Now <br>I’m doing it all from one place.
+             <br><span>I love it.</span></p>
+             <div class="imgslider">
+              <img src="./image/Oval.png" alt="">
+             <h5>Danny,
+             <br>Guitar instructor</h5>
+             </div>
+            </div>
+            <div class="carousel">
+              <img src="./image/“.svg" alt="">
+            <p>Before using Envite I had to manage my <br>business through four  different <br>applications, which meant a lot of <br>manual work and time wasted. Now <br>I’m doing it all from one place.
+             <br><span>I love it.</span></p>
+             <div class="imgslider">
+              <img src="./image/Oval.png" alt="">
+             <h5>Danny,
+             <br>Guitar instructor</h5>
+            </div>
+          </div>
+
+          <div class="carousel">
+            <img src="./image/“.svg" alt="">
+            <p>Before using Envite I had to manage my <br>business through four  different <br>applications, which meant a lot of <br>manual work and time wasted. Now <br>I’m doing it all from one place.
+             <br><span>I love it.</span></p>
+             <h5>Jude,
+             <br>Graphic Designer & Artist</h5>
+          </div>
+        </div>
+      </div>
+
+      
+      <input type="radio1" id="prevBtn">
+      <input type="radio1" id="nextBtn">
+
+        <!-- <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button> -->
+
+        <script src="./app.js"></script>
+
+
+
+<!-- auto navigation second slider
+          <div class="navigation-auto1">
+            <div class="auto-btn11"></div>
+            <div class="auto-btn22"></div>
+            <div class="auto-btn33"></div>
+          </div>
+        </div>
+<!-- manual navigation second slider -->
+        <!-- <div class="navigation-manual1">
+          <label for="radio11" class="manual-btn1"></label>
+          <label for="radio22" class="manual-btn1"></label>
+          <label for="radio33" class="manual-btn1"></label>
+        </div>
+      </div>
+
+      <script>
+        var counter = 1 
+        setInterval(function(){
+          document.getElementById('radio1' + counter).checked = true;
+          counter++;
+          if(counter > 3){
+            counter = 1;
+          }
+        }, 5000);
+      </script> --> 
+      
+
+
+
+        <!-- <div class="slide first">
+          <div class="slidefirst">
+          <div class="slidefirst1">
+          <img src="./image/“.svg" alt="">
+          <p>Before using Envite I had to manage <br>my business through four  different <br>applications, which meant a lot of <br>manual work and time wasted. Now <br>I’m doing it all from one place.
+          <br><span>I love it.</span></p>
+          </div>
+          <div>
+            <img src="./image/Oval.png" alt="">
+            <h5>Danny,</h5>
+            <h6>instructor</h6>
+          </div>
+          </div>
+        </div> -->
+    <!-- </div>
+  </div>  -->
+
+<!-- last section -->
+
+  <div class="lastsection">
+    <h4>Start using Envite for free</h4>
+    <h5>Set up your personalized service page and offer your services</h5>
+    <h6>Once you start earning, we will take an industry-standard rate <br>for processing payments</h6>
+</div>
+
+    <!-- Footer -->
+
+   <footer>
+     <div class="footer">
+      <div class="footerfirstsec">
+        <img src="./image/Group 44969.png" alt="">
+        <p>Envite is an all-in-one platform <br>for anyone looking to start <br>making extra cash hassle-free</p>
+      </div>
+      <div class="footersecondsec">
+        <h5>Features</h5>
+        <a href="#"><p>Flexible appointment scheduling calendar</p></a>
+        <a href="#"><p>Branded personal self-site</p></a>
+        <a href="#"><p>Free video conferencing tools</p></a>
+        <a href="#"><p>Clients management</p></a>
+        <a href="#"><p>Billing & payments</p></a>
+        <a href="#"><p>Widget to your site</p></a>
+        <a href="#"><p>Peer-Based self monetization advisor</p></a>
+        <a href="#"><p>Campaigns</p></a>
+        <a href="#"><p>Groups</p></a>
+      </div>
+      <div class="footerthirdsec">
+        <h6>Pricing</h6>
+        <a href=""></a><p>Learn</p></a>
+        <a href=""></a><p>FAQs</p></a>
+        <a href=""></a><p>Blog</p></a>
+      </div>
+      <div class="footerfourthsec">
+        <h6>About us</h6>
+        <a href=""><p>Terms of Service</p></a>
+        <a href=""><p>Privacy Policy</p></a>
+      </div>
+    </div>
+    <div class="bordertop"></div>
+    <div class="footerp">
+      <p>Copyright © Envite.live️ 2022 All rights reserved.</p>
+    </div>
+    </footer>
+  </body>
 </html>
